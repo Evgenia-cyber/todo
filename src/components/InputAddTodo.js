@@ -1,14 +1,22 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
+function useInputValue(defaultValue = "") {
+   const [value, setValue] = useState(defaultValue);
+   return {
+     value: value,
+     onChange: (event) => setValue(event.target.value),
+   };
+ }
+
 function InputAddTodo({ onCreate }) {
-  const [value, setValue] = useState("");
+  let input=useInputValue('');
 
   function submitHandler(event) {
     event.preventDefault();
-    if (value.trim()) {
-      onCreate(value);
-      setValue("");
+    if (input.value.trim()) {
+      onCreate(input.value);
+      input='';
     }
   }
   
@@ -17,10 +25,7 @@ function InputAddTodo({ onCreate }) {
       <input
         type="text"
         placeholder="Enter new todo"
-        value={value}
-        onChange={(event) => {
-          setValue(event.target.value);
-        }}
+       {...input}
       />
       <button type="submit">Add todo</button>
     </form>
