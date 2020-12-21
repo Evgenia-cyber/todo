@@ -1,9 +1,7 @@
-import React,{useContext} from "react";
+import React from "react";
 import PropTypes from "prop-types";
-import Context from "../context";
 
-function TodoItem({ todo, index, onChange }) {
-  const {removeTodo}=useContext(Context);
+function TodoItem({ todo, index, onChange,onRemove }) {
   return (
     
         <li className="listItem">
@@ -16,15 +14,16 @@ function TodoItem({ todo, index, onChange }) {
           <strong>{++index}</strong>&nbsp;
           {todo.title}
         </span>
-        <button onClick={()=>{removeTodo(todo.id)}}>&times;</button>
+        <button onClick={()=>{onRemove(todo.id)}}>&times;</button>
       </li>
       
   );
 }
-//добавляем валидацию для props, используя библиотеку "prop-types"
+
 TodoItem.propTypes = {
   todo: PropTypes.object.isRequired,
   index: PropTypes.number,
   onChange: PropTypes.func.isRequired,
+  onRemove: PropTypes.func.isRequired
 };
 export default TodoItem;

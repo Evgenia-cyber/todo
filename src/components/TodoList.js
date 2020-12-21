@@ -6,14 +6,15 @@ function TodoList(props) {
   return (
     <ul className="resetList">
       {props.todos.map((todo, index) => (
-        <TodoItem key={todo.id} todo={todo} index={index} onChange={props.onToggle}/>
+        <TodoItem key={todo.id} todo={todo} index={index} onChange={props.onToggle} onRemove={props.onRemove}/>
       ))}
     </ul>
   );
 }
-//добавляем валидацию для props, используя библиотеку "prop-types"
+
 TodoList.propTypes = {
-  todos: PropTypes.arrayOf(PropTypes.object).isRequired, //todos-это массив из объектов. isRequired - это обязательный props для работы компонента
-  onToggle: PropTypes.func.isRequired
+  todos: PropTypes.arrayOf(PropTypes.object).isRequired, 
+  onToggle: PropTypes.func.isRequired,
+  onRemove: PropTypes.func.isRequired
 };
 export default TodoList;
