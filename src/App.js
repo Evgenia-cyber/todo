@@ -3,6 +3,7 @@ import InputAddTodo from "./components/InputAddTodo";
 import TodoList from "./components/TodoList";
 import Context from "./context";
 import Preloader from "./Loader";
+import Modal from "./Modal/Modal";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -41,6 +42,7 @@ function App() {
     <Context.Provider value={{ removeTodo }}>
       <div className="wrapper">
         <h1>React tutorial</h1>
+        <Modal/>
         <InputAddTodo onCreate={addTodo} />
         {loading && <Preloader />}
         {todos.length > 0 ? (
