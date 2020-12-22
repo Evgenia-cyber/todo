@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Evgenia-cyber/todo/static/css/main.a9e0e5cf.chunk.css",
-    "main.js": "/Evgenia-cyber/todo/static/js/main.0f455f1f.chunk.js",
-    "main.js.map": "/Evgenia-cyber/todo/static/js/main.0f455f1f.chunk.js.map",
-    "runtime-main.js": "/Evgenia-cyber/todo/static/js/runtime-main.da63e0fe.js",
-    "runtime-main.js.map": "/Evgenia-cyber/todo/static/js/runtime-main.da63e0fe.js.map",
-    "static/js/2.0cc46a88.chunk.js": "/Evgenia-cyber/todo/static/js/2.0cc46a88.chunk.js",
-    "static/js/2.0cc46a88.chunk.js.map": "/Evgenia-cyber/todo/static/js/2.0cc46a88.chunk.js.map",
-    "static/js/3.56e54990.chunk.js": "/Evgenia-cyber/todo/static/js/3.56e54990.chunk.js",
-    "static/js/3.56e54990.chunk.js.map": "/Evgenia-cyber/todo/static/js/3.56e54990.chunk.js.map",
-    "index.html": "/Evgenia-cyber/todo/index.html",
-    "static/css/main.a9e0e5cf.chunk.css.map": "/Evgenia-cyber/todo/static/css/main.a9e0e5cf.chunk.css.map",
-    "static/js/2.0cc46a88.chunk.js.LICENSE.txt": "/Evgenia-cyber/todo/static/js/2.0cc46a88.chunk.js.LICENSE.txt"
+    "main.css": "/todo/static/css/main.a9e0e5cf.chunk.css",
+    "main.js": "/todo/static/js/main.0f455f1f.chunk.js",
+    "main.js.map": "/todo/static/js/main.0f455f1f.chunk.js.map",
+    "runtime-main.js": "/todo/static/js/runtime-main.ebf1e1c1.js",
+    "runtime-main.js.map": "/todo/static/js/runtime-main.ebf1e1c1.js.map",
+    "static/js/2.0cc46a88.chunk.js": "/todo/static/js/2.0cc46a88.chunk.js",
+    "static/js/2.0cc46a88.chunk.js.map": "/todo/static/js/2.0cc46a88.chunk.js.map",
+    "static/js/3.56e54990.chunk.js": "/todo/static/js/3.56e54990.chunk.js",
+    "static/js/3.56e54990.chunk.js.map": "/todo/static/js/3.56e54990.chunk.js.map",
+    "index.html": "/todo/index.html",
+    "static/css/main.a9e0e5cf.chunk.css.map": "/todo/static/css/main.a9e0e5cf.chunk.css.map",
+    "static/js/2.0cc46a88.chunk.js.LICENSE.txt": "/todo/static/js/2.0cc46a88.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.da63e0fe.js",
+    "static/js/runtime-main.ebf1e1c1.js",
     "static/js/2.0cc46a88.chunk.js",
     "static/css/main.a9e0e5cf.chunk.css",
     "static/js/main.0f455f1f.chunk.js"
